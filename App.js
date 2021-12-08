@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, Image, TextInput, Pressable } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { FontAwesome } from "@expo/vector-icons";
 import { Icon } from 'react-native-elements'
 import { Input } from 'react-native-elements';
@@ -10,7 +10,7 @@ import { Avatar, ListItem, withBadge, Badge, Header } from 'react-native-element
 
 
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const Login = ({event}) => {
   return(
